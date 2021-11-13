@@ -1,48 +1,57 @@
 <?php
+
 namespace EmpleadoOO;
-abstract class Empleado {
+
+abstract class Empleado
+{
     private $nombre;
     private $apellido;
     private $numeroSeguridadSocial;
 
-    function __construct($nombre, $apellido, $numeroSeguridadSocial) 
+    function __construct($nombre, $apellido, $numeroSeguridadSocial)
     {
         $this->nombre = $nombre;
         $this->apellido = $apellido;
         $this->numeroSeguridadSocial = $numeroSeguridadSocial;
     }
 
-    function __getNombre() 
+    public function getNombre()
     {
         return $this->nombre;
     }
 
-    function __setNombre($nombre) 
+    public function setNombre($nombre)
     {
         $this->nombre = $nombre;
+
+        return $this;
     }
 
-    function __getApellidos() 
+    public function getApellido()
     {
         return $this->apellido;
     }
 
-    function __setApellidos($apellido) 
+    public function setApellido($apellido)
     {
         $this->apellido = $apellido;
+
+        return $this;
     }
 
-    function __getNumeroSeguridadSocial() 
+    public function getNumeroSeguridadSocial()
     {
         return $this->numeroSeguridadSocial;
     }
 
-    function __setNumeroSeguridadSocial($numeroSeguridadSocial) 
+    public function setNumeroSeguridadSocial($numeroSeguridadSocial)
     {
         $this->numeroSeguridadSocial = $numeroSeguridadSocial;
+
+        return $this;
     }
 
-    function mostrar() 
+    function mostrar()
     {
         return "Esta empleado: $this->nombre $this->apellido con el NSS: $this->numeroSeguridadSocial";
     }

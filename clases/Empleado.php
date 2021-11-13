@@ -53,6 +53,6 @@ abstract class Empleado
 
     function mostrar()
     {
-        return "Esta empleado: $this->nombre $this->apellido con el NSS: $this->numeroSeguridadSocial";
+        return "Esta empleado: $this->getNombre() $this->getApellido() con el NSS: $this->getNumeroSeguridadSocial()";
     }
 }

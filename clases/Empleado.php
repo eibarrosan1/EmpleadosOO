@@ -1,7 +1,6 @@
 <?php
 
 namespace EmpleadoOO;
-
 abstract class Empleado
 {
     private $nombre;
@@ -53,6 +52,6 @@ abstract class Empleado
 
     function mostrar()
     {
-        return "Esta empleado: $this->getNombre() $this->getApellido() con el NSS: $this->getNumeroSeguridadSocial()";
+        return "Esta empleado: " . $this->getNombre() . " " . $this->getApellido() . " con el NSS: " . $this->getNumeroSeguridadSocial();
     }
 }

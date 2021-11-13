@@ -1,6 +1,6 @@
 <?php
-include "clases/Empleado.php";
 namespace EmpleadoOO;
+include "Empleado.php";
 
 class EmpleadoPlantilla extends Empleado {
     private $sueldo;
@@ -20,7 +20,6 @@ class EmpleadoPlantilla extends Empleado {
     public function setSueldo($sueldo)
     {
         $this->sueldo = $sueldo;
-
         return $this;
     }
 
@@ -32,13 +31,12 @@ class EmpleadoPlantilla extends Empleado {
     public function setDietas($dietas)
     {
         $this->dietas = $dietas;
-
         return $this;
     }
 
     public function mostrar() 
     {
-        return (parent::mostrar() ." y sus ingresos son:  $this->ingresos()");
+        return (parent::mostrar() ."<br> Los ingresos: " . $this->ingresos());
     }
 
     public function ingresos() 

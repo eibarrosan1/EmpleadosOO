@@ -1,6 +1,6 @@
 <?php
 namespace EmpleadoOO;
-include "clases/Empleado.php";
+include_once "clases/Empleado.php";
 
 class EmpleadoPorComision extends Empleado
 {

@@ -1,6 +1,6 @@
 <?php
 namespace EmpleadoOO;
-include "Empleado.php";
+include_once "clases/Empleado.php";
 
 class EmpleadoPlantilla extends Empleado {
     private $sueldo;

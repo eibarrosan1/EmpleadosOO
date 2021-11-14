@@ -54,4 +54,6 @@ abstract class Empleado
     {
         return "Esta empleado: " . $this->getNombre() . " " . $this->getApellido() . " con el NSS: " . $this->getNumeroSeguridadSocial();
     }
+
+    abstract function ingresos();
 }

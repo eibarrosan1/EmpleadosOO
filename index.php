@@ -1,14 +1,13 @@
 <?php
+include_once "clases/Empresa.php";
+include_once "clases/EmpleadoPlantilla.php";
+include_once "clases/EmpleadoPorComision.php";
+include_once "clases/PruebaPolimorf.php";
 
 use EmpleadoOO\EmpleadoPlantilla;
 use EmpleadoOO\EmpleadoPorComision;
 use EmpleadoOO\PruebaPolimorf;
 use EmpleadoOO\Empresa;
-
-include_once "clases/Empresa.php";
-include_once "clases/EmpleadoPlantilla.php";
-include_once "clases/EmpleadoPorComision.php";
-include_once "clases/PruebaPolimorf.php";
 
 $resultado = "<strong>Empleado:</strong> <br><br>";
 

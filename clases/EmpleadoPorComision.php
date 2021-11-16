@@ -8,7 +8,8 @@ class EmpleadoPorComision extends Empleado
     private $tarifa;
     private $base;
 
-    function __construct($nombre, $apellido, $numeroSeguridadSocial, $horas, $tarifa, $base) {
+    function __construct($nombre, $apellido, $numeroSeguridadSocial, $horas, $tarifa, $base) 
+    {
         parent::__construct($nombre, $apellido, $numeroSeguridadSocial);
         $this->nombre = $nombre;
         $this->tarifa = $tarifa;
@@ -56,8 +57,7 @@ class EmpleadoPorComision extends Empleado
 
     public function ingresos() 
     {
-        $ingresos = ($this->getBase() + $this->getHoras()) * $this->getTarifa();
-        return $ingresos;
+        return $this->getBase() + $this->getHoras() * $this->getTarifa();
     }
 }
 ?>

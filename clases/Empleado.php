@@ -22,7 +22,6 @@ abstract class Empleado
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
-
         return $this;
     }
 
@@ -34,7 +33,6 @@ abstract class Empleado
     public function setApellido($apellido)
     {
         $this->apellido = $apellido;
-
         return $this;
     }
 
@@ -46,7 +44,6 @@ abstract class Empleado
     public function setNumeroSeguridadSocial($numeroSeguridadSocial)
     {
         $this->numeroSeguridadSocial = $numeroSeguridadSocial;
-
         return $this;
     }
 

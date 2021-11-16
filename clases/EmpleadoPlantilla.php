@@ -6,7 +6,8 @@ class EmpleadoPlantilla extends Empleado {
     private $sueldo;
     private $dietas;
 
-    function __construct($nombre, $apellido, $numeroSeguridadSocial, $sueldo, $dietas) {
+    function __construct($nombre, $apellido, $numeroSeguridadSocial, $sueldo, $dietas) 
+    {
         $this->sueldo = $sueldo;
         $this->dietas = $dietas;
         parent::__construct($nombre, $apellido, $numeroSeguridadSocial);
@@ -41,8 +42,7 @@ class EmpleadoPlantilla extends Empleado {
 
     public function ingresos() 
     {
-        $ingresos = $this->getSueldo() + $this->getDietas();
-        return $ingresos;
+        return $this->getSueldo() + $this->getDietas();
     }
 }
 ?>

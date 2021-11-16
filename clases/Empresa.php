@@ -15,7 +15,8 @@ class Empresa
 
     public function listarEmpleados()
     {
-        foreach ($this->empresa as $empleado) {
+        foreach ($this->empresa as $empleado) 
+        {
             $this->resul .= $empleado->mostrar() . "<br>";
         }
         return $this->resul;
@@ -23,7 +24,8 @@ class Empresa
 
     public function sumaIngresos()
     {
-        foreach ($this->empresa as $empleado) {
+        foreach ($this->empresa as $empleado) 
+        {
             $this->ingresos += $empleado->ingresos();
         }
         return $this->ingresos;

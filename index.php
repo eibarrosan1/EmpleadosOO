@@ -13,11 +13,11 @@ $resultado = "<strong>Empleado:</strong> <br><br>";
 
 $resultado .= "<strong>Empleado Asalariado</strong><br>";
 $empleado1 = new EmpleadoPlantilla("Lola", "Etxegaray", "14-78451589-75", 755, 5);
+$resultado .= $empleado1->mostrar() . "<br>Los ingresos son: " . $empleado1->ingresos() . "<br><br><strong>Empleado Por Comision: </strong><br>";
 
-$resultado .= $empleado1->mostrar() . "<br><br><strong>Empleado Por Comision: </strong><br>";
 $empleado2 = new EmpleadoPorComision("Eunate", "Ibarrola", "14-4569871236-15", 8, 20, 2);
+$resultado .= $empleado2->mostrar() . "<br>Los ingresos son: " . $empleado2->ingresos() . "<br><br><strong>Prueba polimorfismo: </strong><br>";
 
-$resultado .= $empleado2->mostrar() . "<br><br><strong>Prueba polimorfismo: </strong><br>";
 $resultado .= "Los ingresos de " . $empleado1->getApellido() . " son " . PruebaPolimorf::calcular($empleado1) . "<br>";
 $resultado .= "Los ingresos de " . $empleado2->getApellido() . " son " . PruebaPolimorf::calcular($empleado2);
 

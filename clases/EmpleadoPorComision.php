@@ -52,7 +52,7 @@ class EmpleadoPorComision extends Empleado
 
     public function mostrar() 
     {
-        return (parent::mostrar() ."<br> Los ingresos: " . $this->ingresos());
+        return (parent::mostrar() . " trabaja " . $this->getHoras() . " su tarifa es " . $this->getTarifa() . " y su base es " . $this->getBase());
     }
 
     public function ingresos() 

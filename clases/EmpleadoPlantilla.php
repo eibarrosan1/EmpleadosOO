@@ -37,7 +37,7 @@ class EmpleadoPlantilla extends Empleado {
 
     public function mostrar() 
     {
-        return (parent::mostrar() ."<br> Los ingresos: " . $this->ingresos());
+        return (parent::mostrar() . "y su sueldo es " . $this->getSueldo() . " y sus dietas: " . $this->getDietas());
     }
 
     public function ingresos() 
